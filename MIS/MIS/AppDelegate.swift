@@ -8,13 +8,18 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let mainStoryboard : UIStoryboard = UIStoryboard(name: StoryboardIdentifier.mainStoryBoard, bundle: nil)
+        let initialViewController  = mainStoryboard.instantiateViewController(withIdentifier: StoryboardIdentifier.landingViewController)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
         return true
     }
 
