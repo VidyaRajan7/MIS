@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  MIS
 //
-//  Created by Developer Admin on 07/08/20.
+//  Created by Wakralab on 07/08/20.
 //  Copyright © 2020 Developer Admin. All rights reserved.
 //
 
@@ -28,6 +28,7 @@ class LoginViewController: CommonViewController {
     func loginInitialSetup() {
         userNameText.delegate = self
         passwordText.delegate = self
+        passwordText.isSecureTextEntry = true
         userNameView.setOffset()
         passwordView.setOffset()
         loginButton.setButtonOffset()
