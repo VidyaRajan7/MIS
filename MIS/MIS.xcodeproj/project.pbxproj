@@ -277,7 +277,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
-				ORGANIZATIONNAME = "Developer Admin";
+				ORGANIZATIONNAME = Wakralab;
 				TargetAttributes = {
 					1BC206DE24DBEA85005215A1 = {
 						CreatedOnToolsVersion = 11.2.1;
