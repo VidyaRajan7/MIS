@@ -3,7 +3,7 @@
 //  MIS
 //
 //  Created by Wakralab on 06/08/20.
-//  Copyright © 2020 Developer Admin. All rights reserved.
+//  Copyright © 2020 Wakralab. All rights reserved.
 //
 
 import UIKit
@@ -48,7 +48,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
 
 }
 
