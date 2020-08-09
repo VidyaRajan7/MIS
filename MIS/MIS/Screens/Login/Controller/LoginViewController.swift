@@ -29,6 +29,8 @@ class LoginViewController: CommonViewController {
         userNameText.delegate = self
         passwordText.delegate = self
         passwordText.isSecureTextEntry = true
+        userNameText.text = CommonStrings.emptyString
+        passwordText.text = CommonStrings.emptyString
         userNameView.setOffset()
         passwordView.setOffset()
         loginButton.setButtonOffset()
