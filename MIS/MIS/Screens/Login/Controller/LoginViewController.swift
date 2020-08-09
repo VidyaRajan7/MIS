@@ -32,20 +32,24 @@ class LoginViewController: CommonViewController {
         userNameView.setOffset()
         passwordView.setOffset()
         loginButton.setButtonOffset()
-        
         //keyboard show/hide notification
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name:UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(LoginViewController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(LoginViewController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-    @objc func keyboardWillShow(notification:NSNotification, scrollView: UIScrollView){
-        viewModel.commonMethods.keybordWillShow(notification: notification, view: self.view, scrollView: self.scrollView)
+    @objc func keyboardWillShow(notification: Notification) {
+        if let keyboardFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            var contentInset:UIEdgeInsets = scrollView.contentInset
+            contentInset.bottom = keyboardFrame.size.height + 20
+            scrollView.contentInset = contentInset
+        }
     }
 
-    @objc func keyboardWillHide(notification:NSNotification, scrollView: UIScrollView){
-        viewModel.commonMethods.keyboardWillHide(scrollView: self.scrollView)
+    @objc func keyboardWillHide(notification: Notification) {
+        let contentInset:UIEdgeInsets = UIEdgeInsets.zero
+        scrollView.contentInset = contentInset
     }
-
+    
 }
 
 extension LoginViewController: UITextFieldDelegate {
@@ -54,4 +58,5 @@ extension LoginViewController: UITextFieldDelegate {
         self.view.endEditing(true)
         return false
     }
+    
 }

@@ -38,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AL SHAREEF ENTERPRISES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8am-9d-deu">
-                                <rect key="frame" x="20" y="202.66666666666666" width="696" height="32.666666666666657"/>
+                                <rect key="frame" x="20" y="206.66666666666666" width="696" height="25"/>
                                 <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzO-hX-NqI">
-                                <rect key="frame" x="298" y="285.33333333333331" width="140" height="38"/>
+                                <rect key="frame" x="298" y="281.66666666666669" width="140" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="S6b-Qu-CPd"/>
                                 </constraints>
@@ -103,15 +103,18 @@
                                                 <rect key="frame" x="184" y="74.333333333333329" width="368" height="47"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N7M-7X-SBF">
-                                                        <rect key="frame" x="12" y="7" width="305" height="34"/>
+                                                        <rect key="frame" x="12" y="7" width="310" height="34"/>
                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="13"/>
+                                                        </variation>
                                                         <variation key="heightClass=regular-widthClass=regular">
                                                             <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="22"/>
                                                         </variation>
                                                     </textField>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconUser" translatesAutoresizingMaskIntoConstraints="NO" id="7KQ-xI-sPh">
-                                                        <rect key="frame" x="325" y="9" width="33" height="29"/>
+                                                        <rect key="frame" x="330" y="9" width="33" height="29"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="33" id="e8L-oO-ANr">
                                                                 <variation key="heightClass=compact-widthClass=compact" constant="37"/>
@@ -123,7 +126,9 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstItem="7KQ-xI-sPh" firstAttribute="top" secondItem="zSD-nv-q1l" secondAttribute="top" constant="9" id="1IT-sT-8Kb"/>
-                                                    <constraint firstAttribute="trailing" secondItem="7KQ-xI-sPh" secondAttribute="trailing" constant="10" id="4JL-PR-sqj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7KQ-xI-sPh" secondAttribute="trailing" constant="5" id="4JL-PR-sqj">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                    </constraint>
                                                     <constraint firstItem="7KQ-xI-sPh" firstAttribute="leading" secondItem="N7M-7X-SBF" secondAttribute="trailing" constant="8" id="51d-Y6-rRi"/>
                                                     <constraint firstItem="N7M-7X-SBF" firstAttribute="leading" secondItem="zSD-nv-q1l" secondAttribute="leading" constant="12" id="BwJ-HG-4gz"/>
                                                     <constraint firstAttribute="height" constant="47" id="CJG-2g-JoR">
@@ -183,15 +188,18 @@
                                                 <rect key="frame" x="184" y="161.66666666666666" width="368" height="47"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="llV-KU-qSV">
-                                                        <rect key="frame" x="12" y="7" width="304" height="34"/>
+                                                        <rect key="frame" x="12" y="7" width="310" height="34"/>
                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="14"/>
+                                                        </variation>
                                                         <variation key="heightClass=regular-widthClass=regular">
                                                             <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="22"/>
                                                         </variation>
                                                     </textField>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPassword" translatesAutoresizingMaskIntoConstraints="NO" id="j76-i0-HUg">
-                                                        <rect key="frame" x="324" y="9" width="33" height="29"/>
+                                                        <rect key="frame" x="330" y="9" width="33" height="29"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="33" id="4F8-yy-ZGH">
                                                                 <variation key="heightClass=compact-widthClass=compact" constant="37"/>
@@ -209,7 +217,9 @@
                                                         <variation key="heightClass=regular-widthClass=regular" constant="65"/>
                                                     </constraint>
                                                     <constraint firstItem="j76-i0-HUg" firstAttribute="top" secondItem="dLK-Lo-UTA" secondAttribute="top" constant="9" id="VCS-xE-ykh"/>
-                                                    <constraint firstAttribute="trailing" secondItem="j76-i0-HUg" secondAttribute="trailing" constant="11" id="aE1-uN-efd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="j76-i0-HUg" secondAttribute="trailing" constant="5" id="aE1-uN-efd">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                    </constraint>
                                                     <constraint firstItem="llV-KU-qSV" firstAttribute="top" secondItem="dLK-Lo-UTA" secondAttribute="top" constant="7" id="bIY-zn-eeU"/>
                                                     <constraint firstAttribute="bottom" secondItem="llV-KU-qSV" secondAttribute="bottom" constant="6" id="ofw-ay-YmC"/>
                                                     <constraint firstAttribute="bottom" secondItem="j76-i0-HUg" secondAttribute="bottom" constant="9" id="xIS-X4-YKL"/>

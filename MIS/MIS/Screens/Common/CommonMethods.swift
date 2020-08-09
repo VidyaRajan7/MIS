@@ -10,21 +10,6 @@ import Foundation
 import UIKit
 
 class CommonMethods {
-    
-    func keybordWillShow(notification: NSNotification, view: UIView, scrollView: UIScrollView) {
-        if let userInfo = notification.userInfo {
-            var keyboardFrame:CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
-            keyboardFrame = view.convert(keyboardFrame, from: nil)
-            var contentInset:UIEdgeInsets = scrollView.contentInset
-            contentInset.bottom = keyboardFrame.size.height + 20
-            scrollView.contentInset = contentInset
-        }
-    }
-    
-    func keyboardWillHide(scrollView: UIScrollView) {
-        let contentInset:UIEdgeInsets = UIEdgeInsets.zero
-        scrollView.contentInset = contentInset
-    }
 }
 
 extension UIView {
@@ -38,6 +23,7 @@ extension UIView {
 }
 
 extension UIButton {
+    
     func setButtonOffset() {
         self.layer.shadowColor = UIColor.gray.cgColor
         self.layer.shadowOpacity = 0.25
