@@ -30,9 +30,9 @@ class LandingViewController: UIViewController {
         }
         if let loginFont = UIFont(name: FontName.gothamLight, size: fontSize) {
             let attrs = [
-            NSAttributedString.Key.font: loginFont,
-            NSAttributedString.Key.foregroundColor: UIColor.white,
-            NSAttributedString.Key.underlineStyle: 1.5
+                NSAttributedString.Key.font: loginFont,
+                NSAttributedString.Key.foregroundColor: UIColor.white,
+                NSAttributedString.Key.underlineStyle: 1.5
             ] as [NSAttributedString.Key: Any]
             let attributedString = NSMutableAttributedString(string: CommonStrings.emptyString)
             let buttonTitleStr = NSMutableAttributedString(string: CommonStrings.loginName, attributes:attrs)
