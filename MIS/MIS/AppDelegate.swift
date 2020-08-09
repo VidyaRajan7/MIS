@@ -2,19 +2,24 @@
 //  AppDelegate.swift
 //  MIS
 //
-//  Created by Developer Admin on 06/08/20.
-//  Copyright © 2020 Developer Admin. All rights reserved.
+//  Created by Wakralab on 06/08/20.
+//  Copyright © 2020 Wakralab. All rights reserved.
 //
 
 import UIKit
 
+@available(iOS 13.0, *)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let mainStoryboard : UIStoryboard = UIStoryboard(name: StoryboardIdentifier.mainStoryBoard, bundle: nil)
+        let initialViewController  = mainStoryboard.instantiateViewController(withIdentifier: StoryboardIdentifier.landingViewController)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
         return true
     }
 
@@ -31,7 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
 
 }
 
