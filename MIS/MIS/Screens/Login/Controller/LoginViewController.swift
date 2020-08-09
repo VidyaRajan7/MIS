@@ -41,7 +41,7 @@ class LoginViewController: CommonViewController {
     
     @objc func keyboardWillShow(notification: Notification) {
         if let keyboardFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-            var contentInset:UIEdgeInsets = scrollView.contentInset
+            var contentInset: UIEdgeInsets = scrollView.contentInset
             contentInset.bottom = keyboardFrame.size.height + 20
             scrollView.contentInset = contentInset
         }
@@ -50,6 +50,9 @@ class LoginViewController: CommonViewController {
     @objc func keyboardWillHide(notification: Notification) {
         let contentInset:UIEdgeInsets = UIEdgeInsets.zero
         scrollView.contentInset = contentInset
+    }
+    
+    @IBAction func didTapLogin(_ sender: UIButton) {
     }
     
 }

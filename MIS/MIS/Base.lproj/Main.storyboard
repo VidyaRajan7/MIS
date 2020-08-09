@@ -103,7 +103,7 @@
                                                 <rect key="frame" x="184" y="74.333333333333329" width="368" height="47"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N7M-7X-SBF">
-                                                        <rect key="frame" x="12" y="7" width="310" height="34"/>
+                                                        <rect key="frame" x="12" y="7" width="309" height="34"/>
                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <variation key="heightClass=compact-widthClass=compact">
@@ -114,9 +114,9 @@
                                                         </variation>
                                                     </textField>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconUser" translatesAutoresizingMaskIntoConstraints="NO" id="7KQ-xI-sPh">
-                                                        <rect key="frame" x="330" y="9" width="33" height="29"/>
+                                                        <rect key="frame" x="329" y="9" width="34" height="29"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="33" id="e8L-oO-ANr">
+                                                            <constraint firstAttribute="width" constant="34" id="e8L-oO-ANr">
                                                                 <variation key="heightClass=compact-widthClass=compact" constant="37"/>
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="38"/>
                                                             </constraint>
@@ -183,12 +183,15 @@
                                                 <variation key="heightClass=regular-widthClass=regular">
                                                     <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="29"/>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="didTapLogin:" destination="6tm-dP-ppq" eventType="touchUpInside" id="lMo-Wv-Xme"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLK-Lo-UTA">
                                                 <rect key="frame" x="184" y="161.66666666666666" width="368" height="47"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="llV-KU-qSV">
-                                                        <rect key="frame" x="12" y="7" width="310" height="34"/>
+                                                        <rect key="frame" x="12" y="7" width="309" height="34"/>
                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <variation key="heightClass=compact-widthClass=compact">
@@ -199,9 +202,9 @@
                                                         </variation>
                                                     </textField>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPassword" translatesAutoresizingMaskIntoConstraints="NO" id="j76-i0-HUg">
-                                                        <rect key="frame" x="330" y="9" width="33" height="29"/>
+                                                        <rect key="frame" x="329" y="9" width="34" height="29"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="33" id="4F8-yy-ZGH">
+                                                            <constraint firstAttribute="width" constant="34" id="4F8-yy-ZGH">
                                                                 <variation key="heightClass=compact-widthClass=compact" constant="37"/>
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="38"/>
                                                             </constraint>
