@@ -60,6 +60,7 @@
                                 </state>
                                 <connections>
                                     <action selector="didTapLoginButton:" destination="Hsa-iB-MAy" eventType="touchUpInside" id="z3K-J7-WiK"/>
+                                    <segue destination="6tm-dP-ppq" kind="show" id="Pgq-28-EdG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,7 +83,218 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vre-sK-Sal" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-41.576086956521742" y="192.75362318840581"/>
+            <point key="canvasLocation" x="-7" y="193"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="V3L-8N-qyD">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="6tm-dP-ppq" customClass="LoginViewController" customModule="MIS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ViV-uf-BSH">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qf-0D-qtl">
+                                <rect key="frame" x="0.0" y="44" width="736" height="370"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YH-F5-8bc">
+                                        <rect key="frame" x="0.0" y="0.0" width="736" height="370"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSD-nv-q1l">
+                                                <rect key="frame" x="184" y="74.333333333333329" width="368" height="47"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N7M-7X-SBF">
+                                                        <rect key="frame" x="12" y="7" width="309" height="34"/>
+                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="13"/>
+                                                        </variation>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="22"/>
+                                                        </variation>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconUser" translatesAutoresizingMaskIntoConstraints="NO" id="7KQ-xI-sPh">
+                                                        <rect key="frame" x="329" y="9" width="34" height="29"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="34" id="e8L-oO-ANr">
+                                                                <variation key="heightClass=compact-widthClass=compact" constant="37"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="38"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="7KQ-xI-sPh" firstAttribute="top" secondItem="zSD-nv-q1l" secondAttribute="top" constant="9" id="1IT-sT-8Kb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7KQ-xI-sPh" secondAttribute="trailing" constant="5" id="4JL-PR-sqj">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                    </constraint>
+                                                    <constraint firstItem="7KQ-xI-sPh" firstAttribute="leading" secondItem="N7M-7X-SBF" secondAttribute="trailing" constant="8" id="51d-Y6-rRi"/>
+                                                    <constraint firstItem="N7M-7X-SBF" firstAttribute="leading" secondItem="zSD-nv-q1l" secondAttribute="leading" constant="12" id="BwJ-HG-4gz"/>
+                                                    <constraint firstAttribute="height" constant="47" id="CJG-2g-JoR">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="65"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="bottom" secondItem="N7M-7X-SBF" secondAttribute="bottom" constant="6" id="Spf-RH-FXb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7KQ-xI-sPh" secondAttribute="bottom" constant="9" id="Y3G-fV-h3I"/>
+                                                    <constraint firstItem="N7M-7X-SBF" firstAttribute="top" secondItem="zSD-nv-q1l" secondAttribute="top" constant="7" id="g1s-Db-GS1"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UK-HA-a2B">
+                                                <rect key="frame" x="184" y="52" width="87.333333333333314" height="14.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="13"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="22"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdA-a0-xvW">
+                                                <rect key="frame" x="184" y="139.33333333333334" width="77" height="14.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="13"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="22"/>
+                                                </variation>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWK-8L-k6T">
+                                                <rect key="frame" x="184" y="243.66666666666669" width="368" height="52"/>
+                                                <color key="backgroundColor" red="0.30886033177375793" green="0.7642015814781189" blue="0.93039464950561523" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52" id="a5D-ga-1Vm">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="42"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="69"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="22"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="29"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="didTapLogin:" destination="6tm-dP-ppq" eventType="touchUpInside" id="lMo-Wv-Xme"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLK-Lo-UTA">
+                                                <rect key="frame" x="184" y="161.66666666666666" width="368" height="47"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="llV-KU-qSV">
+                                                        <rect key="frame" x="12" y="7" width="309" height="34"/>
+                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="14"/>
+                                                        </variation>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="22"/>
+                                                        </variation>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPassword" translatesAutoresizingMaskIntoConstraints="NO" id="j76-i0-HUg">
+                                                        <rect key="frame" x="329" y="9" width="34" height="29"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="34" id="4F8-yy-ZGH">
+                                                                <variation key="heightClass=compact-widthClass=compact" constant="37"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="38"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="llV-KU-qSV" firstAttribute="leading" secondItem="dLK-Lo-UTA" secondAttribute="leading" constant="12" id="36r-sR-0MJ"/>
+                                                    <constraint firstItem="j76-i0-HUg" firstAttribute="leading" secondItem="llV-KU-qSV" secondAttribute="trailing" constant="8" id="5CS-IA-bKh"/>
+                                                    <constraint firstAttribute="height" constant="47" id="7ls-Mf-q4l">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="65"/>
+                                                    </constraint>
+                                                    <constraint firstItem="j76-i0-HUg" firstAttribute="top" secondItem="dLK-Lo-UTA" secondAttribute="top" constant="9" id="VCS-xE-ykh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="j76-i0-HUg" secondAttribute="trailing" constant="5" id="aE1-uN-efd">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                    </constraint>
+                                                    <constraint firstItem="llV-KU-qSV" firstAttribute="top" secondItem="dLK-Lo-UTA" secondAttribute="top" constant="7" id="bIY-zn-eeU"/>
+                                                    <constraint firstAttribute="bottom" secondItem="llV-KU-qSV" secondAttribute="bottom" constant="6" id="ofw-ay-YmC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="j76-i0-HUg" secondAttribute="bottom" constant="9" id="xIS-X4-YKL"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Paw-iu-6mP" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6UK-HA-a2B" secondAttribute="trailing" symbolic="YES" id="2fm-sj-Vu3"/>
+                                            <constraint firstItem="zSD-nv-q1l" firstAttribute="width" secondItem="dLK-Lo-UTA" secondAttribute="width" id="5Si-f1-Wl8"/>
+                                            <constraint firstItem="zSD-nv-q1l" firstAttribute="top" secondItem="6UK-HA-a2B" secondAttribute="bottom" constant="8" id="CjA-gd-lsa">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="11"/>
+                                            </constraint>
+                                            <constraint firstItem="Paw-iu-6mP" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sdA-a0-xvW" secondAttribute="trailing" symbolic="YES" id="RVf-TI-b9x"/>
+                                            <constraint firstItem="zSD-nv-q1l" firstAttribute="width" secondItem="1YH-F5-8bc" secondAttribute="width" multiplier="0.5" id="SnP-1S-xHC"/>
+                                            <constraint firstItem="6UK-HA-a2B" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Paw-iu-6mP" secondAttribute="top" constant="40" id="Wbc-TT-zta"/>
+                                            <constraint firstItem="dLK-Lo-UTA" firstAttribute="leading" secondItem="sdA-a0-xvW" secondAttribute="leading" id="dZM-l9-Kcp"/>
+                                            <constraint firstItem="OWK-8L-k6T" firstAttribute="width" secondItem="dLK-Lo-UTA" secondAttribute="width" id="hf5-wi-PoS"/>
+                                            <constraint firstItem="sdA-a0-xvW" firstAttribute="leading" secondItem="zSD-nv-q1l" secondAttribute="leading" id="kOd-OZ-mEi"/>
+                                            <constraint firstItem="dLK-Lo-UTA" firstAttribute="centerY" secondItem="Paw-iu-6mP" secondAttribute="centerY" id="kQA-7l-iWr"/>
+                                            <constraint firstItem="OWK-8L-k6T" firstAttribute="top" secondItem="dLK-Lo-UTA" secondAttribute="bottom" constant="35" id="mKL-LY-b9w">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                            </constraint>
+                                            <constraint firstItem="sdA-a0-xvW" firstAttribute="top" secondItem="zSD-nv-q1l" secondAttribute="bottom" constant="18" id="qJ0-U0-Boi">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="23"/>
+                                            </constraint>
+                                            <constraint firstItem="dLK-Lo-UTA" firstAttribute="top" secondItem="sdA-a0-xvW" secondAttribute="bottom" constant="8" id="uFM-pN-ckK">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="11"/>
+                                            </constraint>
+                                            <constraint firstItem="zSD-nv-q1l" firstAttribute="centerX" secondItem="Paw-iu-6mP" secondAttribute="centerX" id="web-48-4tc"/>
+                                            <constraint firstItem="OWK-8L-k6T" firstAttribute="centerX" secondItem="Paw-iu-6mP" secondAttribute="centerX" id="wio-uh-rMA"/>
+                                            <constraint firstItem="zSD-nv-q1l" firstAttribute="leading" secondItem="6UK-HA-a2B" secondAttribute="leading" id="yDR-KI-Qx5"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="Paw-iu-6mP"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1YH-F5-8bc" secondAttribute="bottom" priority="250" id="17n-bc-Pu4"/>
+                                    <constraint firstItem="1YH-F5-8bc" firstAttribute="leading" secondItem="7qf-0D-qtl" secondAttribute="leading" id="6jd-IG-Jrk"/>
+                                    <constraint firstItem="1YH-F5-8bc" firstAttribute="top" secondItem="7qf-0D-qtl" secondAttribute="top" id="Dbi-Fj-Ce8"/>
+                                    <constraint firstItem="1YH-F5-8bc" firstAttribute="trailing" secondItem="7qf-0D-qtl" secondAttribute="trailing" id="aUZ-Lm-r6Y"/>
+                                    <constraint firstItem="1YH-F5-8bc" firstAttribute="centerY" secondItem="7qf-0D-qtl" secondAttribute="centerY" priority="250" id="hrV-N5-tvs"/>
+                                    <constraint firstItem="1YH-F5-8bc" firstAttribute="centerX" secondItem="7qf-0D-qtl" secondAttribute="centerX" id="qGt-rM-5Sn"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="7qf-0D-qtl" firstAttribute="top" secondItem="Ef5-oC-Xt4" secondAttribute="top" id="130-jd-WMV"/>
+                            <constraint firstItem="7qf-0D-qtl" firstAttribute="bottom" secondItem="Ef5-oC-Xt4" secondAttribute="bottom" id="CER-Hd-IXO"/>
+                            <constraint firstItem="7qf-0D-qtl" firstAttribute="leading" secondItem="Ef5-oC-Xt4" secondAttribute="leading" id="UIH-M8-7KJ"/>
+                            <constraint firstItem="7qf-0D-qtl" firstAttribute="trailing" secondItem="Ef5-oC-Xt4" secondAttribute="trailing" id="r5o-J5-IyE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ef5-oC-Xt4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iBP-TM-aH0"/>
+                    <connections>
+                        <outlet property="loginButton" destination="OWK-8L-k6T" id="DFx-kf-USi"/>
+                        <outlet property="passwordLabel" destination="sdA-a0-xvW" id="KsA-CD-slC"/>
+                        <outlet property="passwordText" destination="llV-KU-qSV" id="ILp-fd-KEz"/>
+                        <outlet property="passwordView" destination="dLK-Lo-UTA" id="zzv-cM-Yla"/>
+                        <outlet property="scrollView" destination="7qf-0D-qtl" id="TdP-ce-43G"/>
+                        <outlet property="userNameLabel" destination="6UK-HA-a2B" id="DgN-dU-qcx"/>
+                        <outlet property="userNameText" destination="N7M-7X-SBF" id="BOi-cL-SpL"/>
+                        <outlet property="userNameView" destination="zSD-nv-q1l" id="1ef-DD-teU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0u-8C-a1v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798.91304347826087" y="-239.13043478260872"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iconPassword" width="48" height="48"/>
+        <image name="iconUser" width="48" height="48"/>
+    </resources>
 </document>

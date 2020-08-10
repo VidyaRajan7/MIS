@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B9469DC24DD188F0089F602 /* gotham_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B9469DA24DD188F0089F602 /* gotham_bold.ttf */; };
-		1B9469DD24DD188F0089F602 /* gotham_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B9469DB24DD188F0089F602 /* gotham_light.ttf */; };
+		1B0D770A24DD62CB00D69369 /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0D770924DD62CB00D69369 /* CommonMethods.swift */; };
+		1B0D770D24DD7AC700D69369 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0D770C24DD7AC700D69369 /* LoginViewModel.swift */; };
 		1B9469DF24DD20280089F602 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9469DE24DD20280089F602 /* AppConstants.swift */; };
+		1B9469E424DD369D0089F602 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9469E324DD369D0089F602 /* CommonViewController.swift */; };
+		1B9469E824DD3FC50089F602 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9469E724DD3FC50089F602 /* LoginViewController.swift */; };
 		1BC206E324DBEA85005215A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC206E224DBEA85005215A1 /* AppDelegate.swift */; };
 		1BC206E524DBEA85005215A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC206E424DBEA85005215A1 /* SceneDelegate.swift */; };
 		1BC206EA24DBEA85005215A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC206E824DBEA85005215A1 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 		1BC206FA24DBEA88005215A1 /* MISTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC206F924DBEA88005215A1 /* MISTests.swift */; };
 		1BC2070524DBEA88005215A1 /* MISUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC2070424DBEA88005215A1 /* MISUITests.swift */; };
 		1BE60BB224DC4D1C006FB710 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE60BB124DC4D1C006FB710 /* LandingViewController.swift */; };
+		1BE7371424DEBF86007F01F5 /* gotham_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE7371224DEBF86007F01F5 /* gotham_bold.ttf */; };
+		1BE7371524DEBF86007F01F5 /* gotham_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE7371324DEBF86007F01F5 /* gotham_light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B9469DA24DD188F0089F602 /* gotham_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gotham_bold.ttf; path = ../../../../../../gotham_bold.ttf; sourceTree = "<group>"; };
-		1B9469DB24DD188F0089F602 /* gotham_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gotham_light.ttf; path = ../../../../../../gotham_light.ttf; sourceTree = "<group>"; };
+		1B0D770924DD62CB00D69369 /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
+		1B0D770C24DD7AC700D69369 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1B9469DE24DD20280089F602 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		1B9469E324DD369D0089F602 /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
+		1B9469E724DD3FC50089F602 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1BC206DF24DBEA85005215A1 /* MIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC206E224DBEA85005215A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BC206E424DBEA85005215A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +61,8 @@
 		1BC2070424DBEA88005215A1 /* MISUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MISUITests.swift; sourceTree = "<group>"; };
 		1BC2070624DBEA88005215A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BE60BB124DC4D1C006FB710 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		1BE7371224DEBF86007F01F5 /* gotham_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gotham_bold.ttf; sourceTree = "<group>"; };
+		1BE7371324DEBF86007F01F5 /* gotham_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gotham_light.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +90,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B0D770B24DD7AB200D69369 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1B0D770C24DD7AC700D69369 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1B9469D924DD186C0089F602 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				1B9469DA24DD188F0089F602 /* gotham_bold.ttf */,
-				1B9469DB24DD188F0089F602 /* gotham_light.ttf */,
+				1BE7371224DEBF86007F01F5 /* gotham_bold.ttf */,
+				1BE7371324DEBF86007F01F5 /* gotham_light.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1B9469E524DD3F970089F602 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1B0D770B24DD7AB200D69369 /* ViewModel */,
+				1B9469E624DD3FAE0089F602 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1B9469E624DD3FAE0089F602 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B9469E724DD3FC50089F602 /* LoginViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		1BC206D624DBEA84005215A1 = {
@@ -147,6 +180,7 @@
 		1BE60BAD24DC44BF006FB710 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1B9469E524DD3F970089F602 /* Login */,
 				1BE60BAF24DC45D2006FB710 /* LandingViewController */,
 				1BE60BAE24DC45B7006FB710 /* Common */,
 			);
@@ -157,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				1B9469DE24DD20280089F602 /* AppConstants.swift */,
+				1B9469E324DD369D0089F602 /* CommonViewController.swift */,
+				1B0D770924DD62CB00D69369 /* CommonMethods.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -241,7 +277,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
-				ORGANIZATIONNAME = "Developer Admin";
+				ORGANIZATIONNAME = Wakralab;
 				TargetAttributes = {
 					1BC206DE24DBEA85005215A1 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -281,11 +317,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B9469DD24DD188F0089F602 /* gotham_light.ttf in Resources */,
+				1BE7371524DEBF86007F01F5 /* gotham_light.ttf in Resources */,
 				1BC206EF24DBEA87005215A1 /* LaunchScreen.storyboard in Resources */,
 				1BC206EC24DBEA87005215A1 /* Assets.xcassets in Resources */,
+				1BE7371424DEBF86007F01F5 /* gotham_bold.ttf in Resources */,
 				1BC206EA24DBEA85005215A1 /* Main.storyboard in Resources */,
-				1B9469DC24DD188F0089F602 /* gotham_bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,10 +346,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9469E824DD3FC50089F602 /* LoginViewController.swift in Sources */,
 				1BC206E324DBEA85005215A1 /* AppDelegate.swift in Sources */,
+				1B0D770A24DD62CB00D69369 /* CommonMethods.swift in Sources */,
 				1BE60BB224DC4D1C006FB710 /* LandingViewController.swift in Sources */,
+				1B9469E424DD369D0089F602 /* CommonViewController.swift in Sources */,
 				1BC206E524DBEA85005215A1 /* SceneDelegate.swift in Sources */,
 				1B9469DF24DD20280089F602 /* AppConstants.swift in Sources */,
+				1B0D770D24DD7AC700D69369 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
